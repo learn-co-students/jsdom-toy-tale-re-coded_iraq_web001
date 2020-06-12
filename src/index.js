@@ -13,3 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+const url = 'http://localhost:3000/toys/:id'
+fetch(url).then(response =>response.json).then(data =>{console.log(data)}).catch(err=>{console.log(err)})
